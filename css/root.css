@@ -1,0 +1,312 @@
+:root {
+    --azul-escuro: #192835;
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url(../fonts/montserrat-extrabold.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../fonts/montserrat-regular.ttf);
+}
+
+/* ==================================================== */
+
+/* PERSONALIZADOS */
+
+.obrigatorio {
+    color: red;
+}
+
+/* PERSONALIZADOS */
+
+/* ==================================================== */
+
+/* COLORS */
+
+.c-white {
+    color: white;
+}
+
+.c-blue {
+    color: var(--azul-escuro);
+}
+
+.c-black {
+    color: black;
+}
+
+/* COLORS */
+
+/* ==================================================== */
+
+/* BACKGROUNDS */
+
+.bg-blue {
+    background-color: var(--azul-escuro);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-white-r {
+    background-color: white;
+    transition: 0.2s ease;
+}
+
+.bg-white-r:hover {
+    background-color: rgb(126, 123, 123);
+}
+
+.bg-wheat {
+    background-color: #F2F2F2;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+/* BACKGROUNDS */
+
+/* ==================================================== */
+
+/* FILLS */
+
+.fill-white {
+    color: white;
+}
+
+.fill-blue {
+    color: var(--azul-escuro);
+}
+
+/* FILLS */
+
+/* ==================================================== */
+
+/* DISPLAYS */
+
+.di-initial {
+    display: initial;
+}
+
+.di-none {
+    display: none;
+}
+
+/* DISPLAYS */
+
+/* ==================================================== */
+
+/* OPACITYS */
+
+.o-0 {
+    opacity: 0;
+}
+
+.o-1 {
+    opacity: 1;
+}
+
+/* OPACITYS */
+
+/* ==================================================== */
+
+/* BORDERS */
+
+.bd-r-5 {
+    border-radius: 5px;
+}
+
+/* BORDERS */
+
+/* ==================================================== */
+
+/* PADDINGS */
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-35 {
+    padding: 35px;
+}
+
+.pd-l-35 {
+    padding-left: 35px;
+}
+
+.pd-r-35 {
+    padding-right: 35px;
+}
+
+.pd-t-35 {
+    padding-top: 35px;
+}
+
+.pd-b-35 {
+    padding-bottom: 35px;
+}
+
+/* PADDINGS */
+
+/* ==================================================== */
+
+/* MARGINS */
+
+.margin-a {
+    margin: auto;
+}
+
+/* margin vertical */
+.margin-v {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.margin-r-15 {
+    margin-right: 15px;
+}
+
+.margin-l-auto {
+    margin-left: auto;
+}
+
+/* MARGINS */
+
+/* ==================================================== */
+
+/* TEXTOS */
+
+.p-44 {
+    font-family: 'extrabold';
+    font-size: 44px;
+}
+
+.p-32 {
+    font-family: 'extrabold';
+    font-size: 32px;
+}
+
+.p-24 {
+    font-family: 'extrabold';
+    font-size: 24px;
+}
+
+.p-16 {
+    font-family: 'extrabold';
+    font-size: 16px;
+}
+
+.p-14 {
+    font-family: 'extrabold';
+    font-size: 14px;
+}
+
+.p-12 {
+    font-family: 'extrabold';
+    font-size: 12px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.f-size-15 {
+    font-size: 15pt;
+}
+
+/* TEXTOS */
+
+/* ==================================================== */
+
+/* WIDTHS */
+
+.w-100vw {
+    width: 100vw;
+}
+
+/* WIDTHS */
+
+/* ==================================================== */
+
+/* HEIGHTS */
+
+.h-100 {
+    height: 100%;
+}
+
+.h-65 {
+    height: 65px;
+}
+
+/* HEIGHTS */
+
+/* ==================================================== */
+
+/* FONTES */
+
+.extrabold {
+    font-family: 'extrabold';
+}
+
+.bold {
+    font-family: 'bold';
+}
+
+.regular {
+    font-family: 'regular';
+}
+
+/* FONTES */
+
+/* ==================================================== */
+
+/* CURSOR */
+
+.c-pointer {
+    cursor: pointer;
+}
+
+/* CURSOR */
+
+/* ==================================================== */
+
+/* NOVO */
+
+/* ==================================================== */
+
+/* BUTTON */
+
+.btn-salvar {
+    padding: 5px 10px;
+    color: white;
+    font-family: "bold";
+    border-radius: 5px;
+    border-style: none;
+    border: none;
+}
+
+/* BUTTON */
+
+/* ==================================================== */
