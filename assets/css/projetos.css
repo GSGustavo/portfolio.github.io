@@ -1,0 +1,23 @@
+.cardproj {
+    border-radius: 15px;
+}
+
+.imgproj {
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.2s ease;
+}
+
+.imgproj:hover {
+    transform: scale(1.2);
+}
+
+.img-crop {
+    cursor: pointer;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}

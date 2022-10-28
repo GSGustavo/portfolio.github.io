@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'kbold';
-    src: url(../fonts/KazimirBold.otf);
+    src: url(../assets/fonts/KazimirBold.otf);
 }
 
 /* INFINITE SCALE */
@@ -97,6 +97,10 @@
 
 .btn-curriculo-hover:hover {
     transform: scale(1.1);
+}
+
+.z-1 {
+    z-index: 1;
 }
 
 /* ANIMAÇÕES */

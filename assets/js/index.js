@@ -1,6 +1,10 @@
 setInterval(function () {
-    t = document.querySelectorAll(".skill")[0].offsetHeight
-    $("#skillsrow").height(t)
+    tam = document.querySelectorAll(".skill")[0]
+    if (tam) {
+        t = tam.offsetHeight
+        $("#skillsrow").height(t)
+    }
+   
 }, 500)
 
 
@@ -17,32 +21,38 @@ $(".menu").on('click', function () {
 })
 
 chamada = 0
-setInterval(() => {
+emotes = [';-D', ':)', ':o', ';)', ':D']
 
-    if (chamada == 0) {
-        iframe.classList.remove('d-none')
-        emotesJ.html(';-D')
-    } else if (chamada == 1) {
-        iframe.classList.add('d-none')
-        texto.classList.remove('d-none')
-        textoJ.html('FAÇA UMA ARTE PARA SEU NEGÓCIO')
-        emotesJ.html(':)')
-    } else if (chamada == 2) {
-        textoJ.html('FAÇA SEU SITE')
-        emotesJ.html(':o')
-    } else if (chamada == 3) {
-        textoJ.html('ENTRE EM CONTATO')
-        emotesJ.html(';)')
-    } else if (chamada == 4) {
+setInterval(() => {
+    if (iframe) {
+        if (chamada == 0) {
+            iframe.classList.remove('d-none')
+        } else if (chamada == 1) {
+            iframe.classList.add('d-none')
+            texto.classList.remove('d-none')
+            textoJ.html('FAÇA UMA ARTE PARA SEU NEGÓCIO')
+        } else if (chamada == 2) {
+            textoJ.html('FAÇA SEU SITE')
+        } else if (chamada == 3) {
+            textoJ.html('ENTRE EM CONTATO')
+        } else if (chamada == 4) {
+            texto.classList.add('d-none')
+            iframe.classList.remove('d-none')
+        }
+    }
+
+    emotesJ.html(emotes[chamada])
+
+    if (chamada == 4) {
         chamada = 0
-        texto.classList.add('d-none')
-        iframe.classList.remove('d-none')
-        emotesJ.html(':D')
     }
 
     chamada++
-    
+
+  
 }, 2000);
+
+
 
 cursorInterval = setInterval(() => {
     cursor = document.querySelector("#writring")
@@ -115,7 +125,7 @@ $(".togglebtn").on('click', function() {
         skills[el1].classList.toggle('left')
         skills[el2].classList.toggle('active')
         skills[el2].classList.toggle('right')
-
+        skills[0].classList.toggle('z-1')
 
         setTimeout(function () {
             skills[el1].classList.toggle('left')
@@ -134,6 +144,7 @@ $(".togglebtn").on('click', function() {
         skills[el2].classList.toggle('right')
         skills[el1].classList.toggle('active')
         skills[el1].classList.toggle('left')
+        skills[0].classList.toggle('z-1')
 
         
         setTimeout(function () {
