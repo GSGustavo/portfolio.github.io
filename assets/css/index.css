@@ -29,6 +29,10 @@
 
 /* MENU */
 
+.tema {
+    margin-right: 15px;
+}
+
 .icon-nav {
     cursor: pointer;
 }
@@ -67,13 +71,21 @@
     cursor: pointer;
 }
 
-.bg-dark-skill {
+.bg-dark-dif {
     background-color: #212529;
     color: #f8f9fa;
 }
 
-.bg-light-skill {
+.bg-light-dif {
     background-color: #f8f9fa;
+    color: #212529;
+}
+
+.text-light-dif {
+    color: #f8f9fa;
+}
+
+.text-dark-dif {
     color: #212529;
 }
 

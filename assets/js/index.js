@@ -16,24 +16,30 @@ function tema() {
     if (temaAtual == 0) {
         classeProcurar1 = '.text-light'
         classeProcurar2 = '.bg-dark'
-        main = '.bg-light-skill'
+        bgCompleto = '.bg-light-dif'
+        cor = '.text-light-dif'
     } else {
         classeProcurar1 = '.text-dark'
         classeProcurar2 = '.bg-light'
-        main = '.bg-dark-skill'
+        bgCompleto = '.bg-dark-dif'
+        cor = '.text-dark-dif'
     }
 
-    document.querySelectorAll(main).forEach(element => {
-        verificarToggle(element, 'bg-light-skill', 'bg-dark-skill')
-    })
-    
-    document.querySelectorAll(classeProcurar1).forEach(element => {
-        verificarToggle(element, 'text-light', 'text-dark')
-    })
-    
-    document.querySelectorAll(classeProcurar2).forEach(element => {
-        verificarToggle(element, 'bg-light', 'bg-dark')
-    })
+    chave = [bgCompleto, cor, classeProcurar1, classeProcurar2]
+
+    classes = [
+        ['bg-light-dif', 'bg-dark-dif'],
+        ['text-dark-dif', 'text-light-dif'],
+        ['text-light', 'text-dark'],
+        ['bg-light', 'bg-dark']
+    ]
+
+    for (i = 0; i <= 3; i++) {
+        document.querySelectorAll(chave[i]).forEach(element => {
+            verificarToggle(element, classes[i][0], classes[i][1])
+        })
+    }
+   
 }
 
 $(document).on('ready', tema())
