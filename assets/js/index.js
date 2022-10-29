@@ -1,3 +1,61 @@
+function verificarToggle(el, class1, class2) {
+    if (el.classList.contains(class1)) {
+        el.classList.remove(class1)
+        el.classList.add(class2)
+    } else {
+        el.classList.remove(class2)
+        el.classList.add(class1)
+    }
+}
+
+temaAtual = 0
+
+// body bg-dark text-light
+
+function tema() {
+    if (temaAtual == 0) {
+        classeProcurar1 = '.text-light'
+        classeProcurar2 = '.bg-dark'
+        main = '.bg-light-skill'
+    } else {
+        classeProcurar1 = '.text-dark'
+        classeProcurar2 = '.bg-light'
+        main = '.bg-dark-skill'
+    }
+
+    document.querySelectorAll(main).forEach(element => {
+        verificarToggle(element, 'bg-light-skill', 'bg-dark-skill')
+    })
+    
+    document.querySelectorAll(classeProcurar1).forEach(element => {
+        verificarToggle(element, 'text-light', 'text-dark')
+    })
+    
+    document.querySelectorAll(classeProcurar2).forEach(element => {
+        verificarToggle(element, 'bg-light', 'bg-dark')
+    })
+}
+
+$(document).on('ready', tema())
+
+// bi-brightness-high-fill
+// bi-moon-fill
+
+function toggleTema(el) {
+    el.toggleClass('fa-moon')
+    el.toggleClass('fa-sun')
+}
+
+$(".tema").on('click', function() {
+    if ($(this).hasClass('fa-moon')) {
+        temaAtual = 1
+        return toggleTema($(this)), tema()
+    } else {
+        temaAtual = 0
+        return toggleTema($(this)), tema()
+    }
+})
+
 setInterval(function () {
     tam = document.querySelectorAll(".skill")[0]
     if (tam) {

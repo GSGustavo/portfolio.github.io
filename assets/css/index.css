@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'kbold';
-    src: url(../assets/fonts/KazimirBold.otf);
+    src: url(../fonts/KazimirBold.otf);
 }
 
 /* INFINITE SCALE */
@@ -29,7 +29,7 @@
 
 /* MENU */
 
-.menu {
+.icon-nav {
     cursor: pointer;
 }
 
@@ -46,6 +46,7 @@
 
 #titulo {
     font-family: "kbold";
+    margin-top: -10px;
 }
 
 /* NAV BAR */
@@ -64,6 +65,16 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.bg-dark-skill {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.bg-light-skill {
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
 /* BODY */
@@ -101,6 +112,18 @@
 
 .z-1 {
     z-index: 1;
+}
+
+.text-light, .bg-dark, .bg-light, .text-dark {
+    transition: 0.2s ease;
+}
+
+.fa-brands {
+    transition: 0.2s ease;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
 }
 
 /* ANIMAÇÕES */
