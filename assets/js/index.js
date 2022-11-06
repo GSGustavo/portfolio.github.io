@@ -132,11 +132,19 @@ cursorInterval = setInterval(() => {
 
 nome = 'GUSTAVO GONZAGA'
 
-span = '<span id="" class="writring p-32 c-white align-self-center" style="font-family: regular;">|</span>'
+
 
 escrever()
 
 function escrever() {
+    if (temaAtual == 1) {
+        classtext = 'text-light'
+    } else {
+        classtext = 'text-dark'
+    }
+
+    span = '<span id="" class="writring p-32 ' + classtext + ' align-self-center" style="font-family: regular;">|</span>'
+
     letra = 0
     escreverInterval = setInterval(() => {
         titulo.html(nome.slice(0, letra) + span)
@@ -146,7 +154,7 @@ function escrever() {
             document.querySelector(".writring").id = 'writring' 
             clearInterval(escreverInterval)
             setTimeout(() => {
-                apagar()
+                apagar(span)
             }, 1500);
            
         }
@@ -154,7 +162,7 @@ function escrever() {
 
 }
 
-function apagar() {
+function apagar(span) {
     apagarInterval = setInterval(() => {
         document.querySelector(".writring").id = ''
         titulo.html(nome.slice(0, letra) + span)
