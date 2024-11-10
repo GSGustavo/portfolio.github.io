@@ -49,6 +49,7 @@
 /* NAV BAR */
 
 #titulo {
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
     font-family: "kbold";
     line-height: 90%;
 }
